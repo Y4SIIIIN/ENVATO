@@ -1,0 +1,16 @@
+elseif(isFind($link, 'elements.envato.com')) {
+        $info = file_get_contents("http://144.76.212.210:8686/Envato.php/?key=asd@123&url=$link");
+        $data = json_decode($info);
+        if($data->status) {
+            $name = basename($download);
+            $download = $data->download;
+            $license = $data->license; 
+            $size = getFileSize($download);
+            header('Content-Type: application/json');
+            echo json_encode(array('status' => true, 'name' => $filename, 'size' => $size, 'download' => $download, 'license' => $license));
+        }
+        else {
+            header('Content-Type: application/json');
+            echo json_encode(array('status' => false));
+        }
+    }
