@@ -1,5 +1,5 @@
 elseif(isFind($link, 'elements.envato.com')) {
-        $info = file_get_contents("http://144.76.212.210:8686/Envato.php/?key=asd@123&url=$link");
+        $info = file_get_contents("http:///Envato.php/?key=asd@123&url=$link");
         $data = json_decode($info);
         if($data->status) {
             $name = basename($download);
