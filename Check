@@ -5,3 +5,5 @@ header('Content-Type:application/json');
 if(!file_exists('files')) {
     mkdir('files');
 }
+
+if(!isset($_GET['url']) || !isset($_GET['key'])) {die();};
