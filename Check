@@ -7,3 +7,4 @@ if(!file_exists('files')) {
 }
 
 if(!isset($_GET['url']) || !isset($_GET['key'])) {die();};
+if($_GET['key'] != 'n1stock') die(); 
