@@ -11,3 +11,8 @@ if($_GET['key'] != 'n1stock') die();
 
 $link = $_GET['url'];
 $custom = false;
+if(isset($_GET['custom'])) {
+    if($_GET['custom'] > 0) {
+        $custom = true;
+    }
+}
