@@ -16,3 +16,4 @@ if(isset($_GET['custom'])) {
         $custom = true;
     }
 }
+$filename = $_GET['filename'] ?? "N/A";
