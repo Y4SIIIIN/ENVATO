@@ -21,3 +21,4 @@ if(isFind($link, 'elements.envato.com')){
     $useragent = ""; Enter Your User Agent 
     $cookie = 'C:/wamp64/www/n1stock/cookies/envato.txt';
     $ch = curl_init($link);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
