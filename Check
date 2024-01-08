@@ -27,3 +27,5 @@ if(isFind($link, 'elements.envato.com')){
     curl_setopt($ch, CURLOPT_VERBOSE, true);
     curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
     curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
+
+70 
