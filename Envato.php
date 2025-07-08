@@ -1,7 +1,6 @@
 <?php
-
 header('Content-Type:application/json');
-
+# Passage est mieux que massage ;) 
 if(!file_exists('files')) {
     mkdir('files');
 }
