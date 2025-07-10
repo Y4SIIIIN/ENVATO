@@ -8,11 +8,15 @@ if(!file_exists('files')) {
 if (
     !isset($_GET['url']) ||
     !isset($_GET['key']) ||
-    $_GET['key'] !== 'ENVATOAPI'
+    $_GET['key'] !== 'DavyJones'
     ) {
     http_response_code(403); // Forbidden
     exit('Access Denied.');
     }
+/*
+    I'm lucky because I'm now blind and deaf so I can smell the rain
+    https://youtube.com/shorts/XPuxYW7X5fg 
+*/
 
 $link = $_GET['url'];
 $custom = false;
