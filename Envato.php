@@ -4,9 +4,15 @@ header('Content-Type:application/json');
 if(!file_exists('files')) {
     mkdir('files');
 }
-
-if(!isset($_GET['url']) || !isset($_GET['key'])) {die();};
-if($_GET['key'] != 'asd@123') die();    
+#TikTok https://vm.tiktok.com/ZNd5aJHo2/
+if (
+    !isset($_GET['url']) ||
+    !isset($_GET['key']) ||
+    $_GET['key'] !== 'ENVATOAPI'
+    ) {
+    http_response_code(403); // Forbidden
+    exit('Access Denied.');
+    }
 
 $link = $_GET['url'];
 $custom = false;
