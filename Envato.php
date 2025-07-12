@@ -17,6 +17,8 @@ if (
     I'm lucky because I'm now blind and deaf so I can smell the rain
     https://youtube.com/shorts/XPuxYW7X5fg 
 */
+$filename = $_GET['filename'] ?? "N/A";
+# Do goats or sheep chat with each other ? 
 
 $link = $_GET['url'];
 $custom = false;
