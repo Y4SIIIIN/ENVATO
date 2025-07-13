@@ -17,9 +17,6 @@ if (
     I'm lucky because I'm now blind and deaf so I can smell the rain
     https://youtube.com/shorts/XPuxYW7X5fg 
 */
-$filename = $_GET['filename'] ?? "N/A";
-# Do goats or sheep chat with each other ? 
-
 $link = $_GET['url'];
 $custom = false;
 if(isset($_GET['custom'])) {
@@ -28,6 +25,8 @@ if(isset($_GET['custom'])) {
     }
 }
 $filename = $_GET['filename'] ?? "N/A";
+# I haven’t seen any wolves. If you see one, let me know too. Do goats or sheep chat with each other ? 
+
 if(isFind($link, 'elements.envato.com')) {
     $useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36";
     $cookie = 'C:/wamp64/www/n1stock/cookies/envato.txt';
