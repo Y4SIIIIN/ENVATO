@@ -1,6 +1,5 @@
 <?php
 header('Content-Type:application/json');
-# Passage est mieux que massage ;) 
 if(!file_exists('files')) {
     mkdir('files');
 }
@@ -44,8 +43,18 @@ if(isFind($link, 'elements.envato.com')) {
         'origin: https://elements.envato.com'
     ];
 # WHY ARE YOU LOOKING AT YOUR OWN GLASSES ?
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);  
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+    curl_setopt($ch, CURLOPT_HEADER, 1);
+    $result = curl_exec($ch);
+    curl_close($ch);
+# WHOSE NAME IS THE VOICE IN YOUR EARS ?	
+
 	
-    $ch = curl_init();
+	
+	
+	
+	$ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
     curl_setopt($ch, CURLOPT_HEADER, true);
