@@ -1,1 +1,38 @@
-EDU
+# HTTP Cookie File downloaded with cookies.txt by Genuinous @genuinous
+# This file can be used by wget, curl, aria2c and other standard compliant tools.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://elements.envato.com/"
+#   2) curl --cookie cookies.txt "https://elements.envato.com/"
+#   3) aria2c --load-cookies cookies.txt "https://elements.envato.com/"
+#
+.elements.envato.com	TRUE	/search-events-api/	TRUE	1701257219	dpuid	eyJhbGciOiJFUzI1NiJ9.eyJ1c2VyX2lkIjoiNWM3ZDUwMDgtZDZhNi00MzIwLWEzYWEtZWIxZmIwYjI4N2JhIiwiYW5vbnltb3VzX2lkIjoiNmRlNDYxNjYtOGE0Ni00YWY3LTg1OTMtOGEwNDM0ZGU4ZDM0Iiwic3Vic2NyaXB0aW9uX3N0YXR1cyI6IlBhaWQiLCJpc3MiOiJlbGVtZW50cy1iYWNrZW5kLWNvb2tpZSIsImV4cCI6MTcwMDAyNjAxOX0.cwI4g6FjyBxz64w2ZdGLP8c6C05wx_5KodhdEH0evXigGeFPZMUj91cz3EmD0JNETME_JIpku20XzkK3pQfDLw
+.elements.envato.com	TRUE	/	TRUE	1731583654	envato_client_id	3381f5ea-e369-4ae0-ad7e-5d4bb29fd075
+elements.envato.com	FALSE	/	FALSE	1731040767	original_landing_page_url	https://elements.envato.com/
+.elements.envato.com	TRUE	/	FALSE	1731583619	GO_EXP_STOREFRONT	acDRkPbsSg6ejqGlTTHslg=0&amp;98dde361-fbf2-4a29-87e4-2663cc163783=0&amp;45c01ccf-7690-4a86-81f8-bdc012aeb8e2=1
+.envato.com	TRUE	/	FALSE	1700134020	_gid	GA1.2.1730447186.1699504768
+elements.envato.com	FALSE	/	TRUE	1731127169	CookieConsent	{stamp:%27EMANV1xNPcfc1LEgkhFaZM3zxCpEvSgHQWYG75d1odce74Ka98aptA==%27%2Cnecessary:true%2Cpreferences:true%2Cstatistics:true%2Cmarketing:true%2Cmethod:%27explicit%27%2Cver:1%2Cutc:1699504769631%2Cregion:%27de%27}
+.envato.com	TRUE	/	FALSE	1707280770	_gcl_au	1.1.945882140.1699504770
+.envato.com	TRUE	/	TRUE	1707823620	_rdt_uuid	1699504769953.6073117f-0ff5-446e-83d6-acf4e81f363c
+.envato.com	TRUE	/	FALSE	1707823654	_fbp	fb.1.1699504770111.1764122999
+account.envato.com	FALSE	/	TRUE	1731127184	CookieConsent	{stamp:%27tgn+CkEnY0yYTTNkCqvWKW/9e0VVHN8BdgIc5RwxuPl8Jj70MTSQ8Q==%27%2Cnecessary:true%2Cpreferences:true%2Cstatistics:true%2Cmarketing:true%2Cmethod:%27explicit%27%2Cver:1%2Cutc:1699504784692%2Cregion:%27de%27}
+account.envato.com	FALSE	/	TRUE	1715283287	envatosession	0G%2FtbwzQMcCEoyvr079MqobQiH7EXU2kZyRXCRhUqWXBFhoUsvRMErsVnWQKqiRXfF5T%2BgR7sJNBNgY%2FPIg6IocCeHPK4QROrBITSX4Fect7JhY5Z2WIG8fm%2BJsNAWDRbL4rJTtd084dg6FJ9VvszU5at3jg2wm7X1jiERXtRoOiwdACugVM59PswoZsmPEqC1%2Bc0JaCcyfJB6sRX1g3BFeMG3QWn7S8iYlPICth1LZ%2B4cGpXQ23zvrBDGp3ZN175TNPyB11qtyl18001fCT--l%2B53tboT6K6TkzAW--QW0xyNPVRgVmcDvqUZc6sQ%3D%3D
+account.envato.com	FALSE	/	TRUE	1734064811	btt	7ba44fe9a9344c2b8eb6dfd0f1f8ae5b-IX9NdJjEoG
+.elements.envato.com	TRUE	/	FALSE	1731040813	free_account_first_visit_dashboard	1
+.elements.envato.com	TRUE	/	FALSE	1731583620	_pin_unauth	dWlkPU1ETTBOekl6TVdZdE0yVTJZUzAwTWpBekxUZzJaamd0TlRjNU5HVXhNREJsTXpoaA
+.elements.envato.com	TRUE	/	FALSE	1734068848	preferredLanguage	en
+.elements.envato.com	TRUE	/	FALSE	1734131751	_ga_SFZC8HJ4D7	GS1.1.1699566254.6.1.1699571750.0.0.0
+.envato.com	TRUE	/	FALSE	0	cebs	1
+.envato.com	TRUE	/	FALSE	0	_ce.irv	true
+.envato.com	TRUE	/	FALSE	1700129820	_ce.clock_event	1
+.envato.com	TRUE	/	FALSE	1700129820	_ce.clock_data	28799458%2C144.76.212.210%2C1%2Cf529a32073a22388a8370c39e9b93c86
+.elements.envato.com	TRUE	/	TRUE	1700049380	__cf_bm	yFFPlVep2A900Ri5CnYhBNt9e6x.DFtSGdKnGt8mLbg-1700018781-0-AY9guGpqlb5gzZ5xE6Xy7L7/3LBHPpQevO6nRT4dgTpN2CiVWrvB45T1hWBGFq43RgmOvRM5UcU2wK46ZfRFFPI=
+elements.envato.com	FALSE	/	FALSE	1700048519	_dd_s	rum=0&amp;expire=1700048513047
+.envato.com	TRUE	/	FALSE	1700047680	_gat_elements	1
+.envato.com	TRUE	/	FALSE	1700134020	_uetsid	f89f56c07eb911eea4af0bacee30097d
+.envato.com	TRUE	/	FALSE	1733743620	_uetvid	f89f68d07eb911ee82603beefb4ade94
+.envato.com	TRUE	/	FALSE	1734607620	_ga	GA1.1.632251187.1699504768
+.envato.com	TRUE	/	FALSE	1734607654	_ga_SFZC8HJ4D7	GS1.1.1700043394.50.1.1700047654.0.0.0
+.envato.com	TRUE	/	FALSE	0	cebsp_	191
+.envato.com	TRUE	/	FALSE	1731583655	_ce.s	v~8edc40d863fe144ad4b5af7163586461b52a75e6~lcw~1700047655208~lva~1699869562927~vpv~1~v11.fhb~1699892051876~v11.lhb~1700047654679~gtrk.la~lozoh95x~v11.cs~229985~v11.s~e4d1a400-83a9-11ee-b087-5b400c7015c7~v11.sla~1700047655229~lcw~1700047655229
+.elements.envato.com	TRUE	/	TRUE	1701257256	_elements_session_4	ajJMVFVQRWRkdElaa0htQlNXaWNoT1B6SjZ2RE52bUdSdjhPTVV0RWxKcm1kUVFWcnRXV1JRcnNJeUk4dnVxd2hYNlppSjZGM3hyVVhXSE16RnlvQm9FUDhBd3g0QUxCRkxCdVlaR1ZrT1h1QjJNWjExNHBwQ25TbGtoVHhnMEZhbXRyeWtnTjVwWFJKUG4vNFpxRDhYenRlYnMzKzFoeUV3ZXRQVFpMVDdsUTk1TjJjaHpEUnYzZTlEUS90bzl2Y2lCQlNvM2Y2LzNhTmg5YXRuNkZKSkY4MzEyeS9MK0ZmaDJjVlFLSlpmRk9MbDlpLzAvN21LMnNWUmpiM085RnhlYWtPbGw2SXVnUXR3b21wYzI0NFRxMXpQQzMrZjZaTTVWdldsNmhyM1htdURpVmpUVFo0YTdnWFVPWE9SWnJzQlJYcVZkOGliandoTDNzYTR5OE1aUEZmYUdrMklpSlpraFhKUmhyNGNqMUhzQ3lhYmFMM25KWXEvMmNLU0tIcEtjOTl1ck5kOVAwMHc4ZlJWMThudz09LS12YmF6cHMvRW1DVUZueHFFa3Q2RWZ3PT0%3D--8bb02479ee6ff43e362608c9251605c10471298b
+.elements.envato.com	TRUE	/	TRUE	1701257196	elements.session.5	Fe26.2*0*09fc3157b451485a339b5bcf764c417286165ccc9934ab069a8617b31db7ce47*LlNRK2U33qSyjoC92Ih2CQ*jKuQs7JwPpY43Uj0TG23cWYXr6H89yHryHox4heyyAOf0r4C7e4qts9XfrMl-XtKFj5l6-0I3b1gw2XjhW5pcvbHT-HpiINaynDfPuf77TwkxflJXnzsM-79IeXHScSNNj_envBEQxjW_xC8sIiJWMq6Qp1IXmGluComJPGJcnw*1701228456064*cc8db916b3c5c0bc12a9c9620fea81bf4db0ba28ea7178430eee38cc933b1336*notfb8M-F0-hENxJ0PWFL25OwNzv9Ii6u9H4EMA6Cl4~2
