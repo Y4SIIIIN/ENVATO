@@ -1,5 +1,7 @@
 <?php
+# We don’t seek to gain from you — we offer our credibility with every response.
 header('Content-Type:application/json');
+
 if(!file_exists('files')) {
     mkdir('files');
 }
