@@ -1,7 +1,7 @@
 <?php
 # We don’t seek to gain from you — we offer our credibility with every response.
 header('Content-Type:application/json');
-
+# Humans are forgetful, that’s why they’re chosen.
 if(!file_exists('files')) {
     mkdir('files');
 }
