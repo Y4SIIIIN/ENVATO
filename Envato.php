@@ -5,15 +5,17 @@ header('Content-Type:application/json');
 if(!file_exists('files')) {
     mkdir('files');
 }
-#TikTok https://vm.tiktok.com/ZNd5aJHo2/
-if (
-    !isset($_GET['url']) ||
-    !isset($_GET['key']) ||
-    $_GET['key'] !== 'DavyJones'
-    ) {
-    http_response_code(403); // Forbidden
-    exit('Access Denied.');
+# WHEN YOU BUY A WATCH, YOU CAN WATCH THE VIDEOS.
+if (!isset($_GET['url']) || !isset($_GET['key'])) {
+    http_response_code(400);
+    echo json_encode(['error' => 'Missing parameters']);
+    exit;
     }
+    if ($_GET['key'] !== 'DavyJones') {
+    http_response_code(403);
+    echo json_encode(['error' => 'Invalid key']);
+    exit;
+    }   
 /*
     I'm lucky because I'm now blind and deaf so I can smell the rain
     https://youtube.com/shorts/XPuxYW7X5fg 
