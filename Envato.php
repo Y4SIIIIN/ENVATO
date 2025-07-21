@@ -16,10 +16,7 @@ if (!isset($_GET['url']) || !isset($_GET['key'])) {
     echo json_encode(['error' => 'Invalid key']);
     exit;
     }   
-/*
-    I'm lucky because I'm now blind and deaf so I can smell the rain
-    https://youtube.com/shorts/XPuxYW7X5fg 
-*/
+# You’re not a pawn — I’m still your A4
 $link = $_GET['url'];
 $custom = false;
 if(isset($_GET['custom'])) {
@@ -27,6 +24,7 @@ if(isset($_GET['custom'])) {
         $custom = true;
     }
 }
+
 $filename = $_GET['filename'] ?? "N/A";
 # I haven’t seen any wolves. If you see one, let me know too. Do goats or sheep chat with each other ? 
 if(isFind($link, 'elements.envato.com')) {
