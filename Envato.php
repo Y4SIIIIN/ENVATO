@@ -17,7 +17,18 @@ if (!isset($_GET['url']) || !isset($_GET['key'])) {
     exit;
     }   
 # You’re not a pawn — I’m still your A4
+function isFind($haystack, $needle) {
+return strpos($haystack, $needle) !== false;
+}
+
 $link = $_GET['url'];
+
+if (!isFind($link, 'elements.envato.com')) {
+http_response_code(400);
+echo json_encode(['error' => 'Invalid Envato link']);
+exit;
+}
+
 $custom = false;
 if(isset($_GET['custom'])) {
     if($_GET['custom'] > 0) {
@@ -26,10 +37,9 @@ if(isset($_GET['custom'])) {
 }
 
 $filename = $_GET['filename'] ?? "N/A";
-# I haven’t seen any wolves. If you see one, let me know too. Do goats or sheep chat with each other ? 
 if(isFind($link, 'elements.envato.com')) {
-    $useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"; // Copy Your User Agent 
-    $cookie = 'cookies/envato.txt';
+    $useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36";
+    $cookie = 'C:/wamp64/www/n1stock/cookies/envato.txt';
     $ch = curl_init($link);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -37,19 +47,21 @@ if(isFind($link, 'elements.envato.com')) {
     curl_setopt($ch, CURLOPT_VERBOSE, true);
     curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
     curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
-    $headers = [
-        'Referer: '.$link,
-        'User-Agent: '.$useragent,
-        'sec-fetch-site: same-origin',
-        'sec-fetch-mode: cors',
-        'origin: https://elements.envato.com'
-    ];
-# WHY ARE YOU LOOKING AT YOUR OWN GLASSES ?
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);  
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
-    curl_setopt($ch, CURLOPT_HEADER, 1);
-    $result = curl_exec($ch);
-    curl_close($ch);
+    $url = 'https://elements.envato.com/api/v1/current_user.json';
+    $headers = array(
+      'authority: elements.envato.com',
+      'accept: application/json',
+      'accept-language: en-US,en;q=0.9',
+      'if-none-match: W/"84ce030125b54fa0c3c9441f046de502"',
+      'referer: https://elements.envato.com/under-the-sea-indie-gig-flyer-9QW7QJM',
+      'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"',
+      'sec-ch-ua-mobile: ?0',
+      'sec-ch-ua-platform: "Windows"',
+      'sec-fetch-dest: empty',
+      'sec-fetch-mode: cors',
+      'sec-fetch-site: same-origin',
+      'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+  );
 # WHOSE NAME IS THE VOICE IN YOUR EARS ?	
 
 	
