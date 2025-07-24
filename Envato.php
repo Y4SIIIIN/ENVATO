@@ -90,34 +90,6 @@ if(isFind($link, 'elements.envato.com')) {
        $item = $item[(sizeof($item) - 1)];
    }	
 # BEAUTY CAN ONLY BE SEEN IN A MIRROR. WE CREATED EVERYTHING IN PAIRS. LOOK INTO YOUR OWN EYES.	
-	
-	$ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-    curl_setopt($ch, CURLOPT_HEADER, true);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-    curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
-    curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
-
-    $response = curl_exec($ch);
-    $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
-    $header = substr($response, 0, $header_size);
-
-
-    preg_match('/^x-csrf-token:\s*([^\r\n]+)/mi', $header, $matches);
-    $csrf = $matches[1];
-
-    preg_match('/^x-csrf-token-2:\s*([^\r\n]+)/mi', $header, $matches2);
-    $csrf2 = $matches2[1];
-    
-    $item = $_GET['url'];
-    if(isFind($item, '-')) {
-       $item = explode('-', $item);
-       $item = $item[(sizeof($item) - 1)];
-   }
-
    $url = "https://elements.envato.com/elements-api/items/$item/download_and_license.json";
    $ch = curl_init($url);
    curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
@@ -141,6 +113,7 @@ if(isFind($link, 'elements.envato.com')) {
    curl_close($ch);
 
    $json = json_decode($result);
+# I'm you times two
 
    $textDownloadUrl = "https://elements.envato.com" . $json->data->attributes->textDownloadUrl;
 
