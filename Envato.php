@@ -114,7 +114,7 @@ if(isFind($link, 'elements.envato.com')) {
 
    $json = json_decode($result);
 # I'm you times two
-
+//Getting the license file via cURL
    $textDownloadUrl = "https://elements.envato.com" . $json->data->attributes->textDownloadUrl;
 
    $ch = curl_init($textDownloadUrl);
@@ -126,7 +126,9 @@ if(isFind($link, 'elements.envato.com')) {
    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
    $datalic = curl_exec($ch);
    curl_close($ch);
-
+	
+	if (!is_dir('element_license')) mkdir('element_license', 0755, true);
+	
    $file = file_put_contents("element_license/$item.txt", $datalic);
    $license_url = "http://dl.y4siiiin.com/element_license/$item.txt";
 
@@ -134,16 +136,19 @@ if(isFind($link, 'elements.envato.com')) {
     $filename = getBetweenString($download, "filename%2A%3DUTF-8%27%27", "&");
     $extension = pathinfo($filename, PATHINFO_EXTENSION);
 
+	if (!is_dir('files/envato')) mkdir('files/envato', 0755, true);
+
     if(!$custom) {
         $file = downloadFile2($download, $item, "ElementEnvato");
-        //$mime = getContentType($file);
-        //$extension = mimeToExtension($mime);
         $filename = "ElementEnvato_".$item;
         $dir = "files/envato/$filename".($extension ? ".$extension" : "");
-        //rename($file, $dir);
     }
-    echo json_encode(array('status' => true, 'download' => ($custom ? $download : "http://dl.y4siiiin.com/$dir"), 'license' => $license_url));
+    echo json_encode(array(
+	    'status' => true,
+	    'download' => ($custom ? $download : "http://dl.y4siiiin.com/$dir"),
+	    'license' => $license_url));
 }
+# I WILL NOT SEND A VOICE MESSAGE OF MYSELF. YOU CAN SEE WITH YOUR OWN GLASSES
 function requestWebsite($url) {
 	$ch = curl_init($url);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array('User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'));
