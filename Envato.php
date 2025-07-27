@@ -159,6 +159,7 @@ function requestWebsite($url) {
 	curl_close($ch);
 	return $result;
 }
+# F1
 function isLink($string) {
     $pattern = '/(http[s]?\:\/\/)?(?!\-)(?:[a-zA-Z\d\-]{0,62}[a-zA-Z\d]\.){1,126}(?!\d+)[a-zA-Z\d]{1,63}/';
     return preg_match($pattern, $string);
