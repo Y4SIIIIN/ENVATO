@@ -181,7 +181,7 @@ function getLineWithString($fileName, $str) {
     }
     return -1;
 }
-
+# NEST 
 function downloadFile2($url, $id, $site) {
     $filename = getBetweenString($url, "filename%2A%3DUTF-8%27%27", "&");
         $extension = pathinfo($filename, PATHINFO_EXTENSION);
@@ -206,6 +206,7 @@ function downloadFile2($url, $id, $site) {
     }
     return $newfname;
 }
+
 function downloadFile($url) {
     $path = parse_url($url, PHP_URL_PATH);
     $extension = pathinfo($path, PATHINFO_EXTENSION);
