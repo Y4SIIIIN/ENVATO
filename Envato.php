@@ -206,7 +206,7 @@ function downloadFile2($url, $id, $site) {
     }
     return $newfname;
 }
-
+# What's your name ?
 function downloadFile($url) {
     $path = parse_url($url, PHP_URL_PATH);
     $extension = pathinfo($path, PATHINFO_EXTENSION);
@@ -232,6 +232,7 @@ function downloadFile($url) {
     }
     return $newfname;
 }
+
 function getFileSize($url) {
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
