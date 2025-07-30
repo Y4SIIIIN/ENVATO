@@ -232,7 +232,7 @@ function downloadFile($url) {
     }
     return $newfname;
 }
-
+# “Mr. Anderson…”
 function getFileSize($url) {
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -245,6 +245,7 @@ function getFileSize($url) {
     curl_close($ch);
     return (int) $size;
 }
+
 function isFind($string, $find) {
     $pos = stripos($string, $find);
     if($pos === false) {
