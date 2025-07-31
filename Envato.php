@@ -245,7 +245,7 @@ function getFileSize($url) {
     curl_close($ch);
     return (int) $size;
 }
-
+# ONLY A REAL BRICK NEEDS NOTHING TO LIVE.
 function isFind($string, $find) {
     $pos = stripos($string, $find);
     if($pos === false) {
@@ -253,6 +253,7 @@ function isFind($string, $find) {
     }
     return true;
 }
+
 function removeBefore($string, $before) {
     $pos = strpos($string, $before);
     return $pos !== false ? substr($string, $pos + strlen($before), strlen($string)) : $in;
