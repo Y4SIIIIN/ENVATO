@@ -253,11 +253,12 @@ function isFind($string, $find) {
     }
     return true;
 }
-
+# ONLY NAME 
 function removeBefore($string, $before) {
     $pos = strpos($string, $before);
-    return $pos !== false ? substr($string, $pos + strlen($before), strlen($string)) : $in;
+    return $pos !== false ? substr($string, $pos + strlen($before)) : $string;
 }
+
 function removeAfter($string, $remove) {
     if(isFind($string, $remove)) {
         return substr($string, 0, (strpos($string, $remove) + strlen($remove)));
@@ -488,3 +489,4 @@ function GetBetween($content, $start, $end) {
     }
     return '';
 }
+
