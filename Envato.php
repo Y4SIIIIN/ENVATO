@@ -258,13 +258,16 @@ function removeBefore($string, $before) {
     $pos = strpos($string, $before);
     return $pos !== false ? substr($string, $pos + strlen($before)) : $string;
 }
-
+function isFind($string, $find) {
+    return stripos($string, $find) !== false;
+}
 function removeAfter($string, $remove) {
-    if(isFind($string, $remove)) {
+    if (isFind($string, $remove)) {
         return substr($string, 0, (strpos($string, $remove) + strlen($remove)));
     }
     return $string;
 }
+
 function getFileNameFromURL($url) {
     $path = parse_url($url, PHP_URL_PATH);
     return basename($path);
@@ -489,4 +492,5 @@ function GetBetween($content, $start, $end) {
     }
     return '';
 }
+
 
