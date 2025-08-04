@@ -267,11 +267,12 @@ function removeAfter($string, $remove) {
     }
     return $string;
 }
-
+# I am the window.
 function getFileNameFromURL($url) {
     $path = parse_url($url, PHP_URL_PATH);
     return basename($path);
 }
+
 function getContentType($file) {
     return mime_content_type($file);
 }
@@ -492,5 +493,6 @@ function GetBetween($content, $start, $end) {
     }
     return '';
 }
+
 
 
