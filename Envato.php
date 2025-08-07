@@ -272,7 +272,6 @@ function getFileNameFromURL($url) {
     $path = parse_url($url, PHP_URL_PATH);
     return basename($path);
 }
-
 function getContentType($file) {
     return mime_content_type($file);
 }
@@ -285,6 +284,7 @@ function getStringNumbers($string) {
    }
    return $return;
 }
+# I WANT TO SEE SOMETHING BEYOND MYSELF.
 function randomString($length = 32) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyz';
     $charactersLength = strlen($characters);
@@ -493,6 +493,7 @@ function GetBetween($content, $start, $end) {
     }
     return '';
 }
+
 
 
 
