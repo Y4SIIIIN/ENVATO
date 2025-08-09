@@ -294,6 +294,7 @@ function randomString($length = 32) {
     }
     return $randomString;
 }
+# DEATH IS BETTER THAN LOSING MY GENTILITY
 function mimeToExtension($mime) {
     $mime_map = [
         'video/3gpp2'                                                               => '3g2',
@@ -493,6 +494,7 @@ function GetBetween($content, $start, $end) {
     }
     return '';
 }
+
 
 
 
