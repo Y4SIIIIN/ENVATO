@@ -494,6 +494,8 @@ function GetBetween($content, $start, $end) {
     }
     return '';
 }
+# ONLY A REAL BRICK NEEDS NOTHING TO LIVE.
+
 
 
 
